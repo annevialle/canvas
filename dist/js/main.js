@@ -118,8 +118,8 @@ window.onload = function() {
 
   var stage = new Kinetic.Stage({
     container: "kinetic",
-    width: 900,
-    height: 900,
+    width: 1024,
+    height: 500,
     fill: "white"
   });
 
@@ -144,13 +144,13 @@ window.onload = function() {
     for(var i=0;i<maPalette.length;i++)
     {
       var rect = new Kinetic.Rect({
-      	x: 240+i*50,
-  		y: 40+i*20,
-        width: 100,
-        height: 50,
+      	x: 700 + Math.floor(i/5)*60,
+  		y: 50 + (i%5)*60,
+        width: 60,
+        height: 60,
         fill: maPalette[i],
         stroke: 'black',
-        strokeWidth: 4
+        strokeWidth: 1
       });
             rect.on("click", function(){
         	color = this.fill();
