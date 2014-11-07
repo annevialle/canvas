@@ -2,7 +2,7 @@ window.onload = function() {
    var color;
 
   var stage = new Kinetic.Stage({
-    container: "kinetic",
+    container: "saumon",
     width: 1024,
     height: 500,
     fill: "white"
